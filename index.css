@@ -3,10 +3,48 @@
 :root {
   --white: hsl(0 0% 100%);
   --light-gray: hsl(212 45% 89%);
-  --grayish-blue: hsl(22 15% 55%);
+  --grayish-blue: hsl(220 15% 55%);
   --dark-blue: hsl(218 44% 22%);
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
   background-color: var(--light-gray);
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.card {
+  width: 300px;
+  padding: 12px;
+  background-color: var(--white);
+  border-radius: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.description {
+  padding: 15px;
+}
+
+.description h3 {
+  color: var(--dark-blue);
+}
+
+.description p {
+  color: var(--grayish-blue);
+  font-size: 15px;
 }
